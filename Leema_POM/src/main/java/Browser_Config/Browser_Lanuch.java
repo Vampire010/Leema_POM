@@ -16,7 +16,7 @@ public class Browser_Lanuch
 	
 		if(browser_Type.equals("chrome"))
 		{				
-			System.setProperty("webdriver.chrome.driver", "/Users/girishg/eclipse-workspace/Leema_POM/Browser_Drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/girishg/git/Leema_POM/Leema_POM/Browser_Drivers/chromedriver");
 			driver = new ChromeDriver();
 			driver.get(Url);				
 		}
@@ -30,7 +30,7 @@ public class Browser_Lanuch
 		
 		else if(browser_Type.equals("firefox"))
 		{				
-			System.setProperty("webdriver.gecko.driver", "/Users/girishg/eclipse-workspace/Leema_POM/Browser_Drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "/Users/girishg/git/eclipse-workspace/Leema_POM/Browser_Drivers/geckodriver");
 			driver = new FirefoxDriver();
 			driver.get(Url);			
 		}

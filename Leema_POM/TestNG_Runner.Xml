@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+   <test name="Auomation Test" >
+       
+	
+	   <classes>
+	   		<class name = "Test_Pages.Login_Page_Test" />
+	   </classes>
+	   
+	   
+	   		    
+   </test>
+ </suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test-Suite" duration-ms="15747" started-at="2021-09-10T06:23:45 IST" finished-at="2021-09-10T06:24:00 IST">
+    <groups>
+    </groups>
+    <test name="Auomation Test" duration-ms="15747" started-at="2021-09-10T06:23:45 IST" finished-at="2021-09-10T06:24:00 IST">
+      <class name="Test_Pages.Login_Page_Test">
+        <test-method status="PASS" signature="open_browser()[pri:0, instance:Test_Pages.Login_Page_Test@305fd85d]" name="open_browser" is-config="true" duration-ms="5079" started-at="2021-09-10T06:23:45 IST" finished-at="2021-09-10T06:23:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_browser -->
+        <test-method status="PASS" signature="Login_test()[pri:0, instance:Test_Pages.Login_Page_Test@305fd85d]" name="Login_test" duration-ms="7533" started-at="2021-09-10T06:23:50 IST" finished-at="2021-09-10T06:23:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_test -->
+        <test-method status="PASS" signature="close_browser()[pri:0, instance:Test_Pages.Login_Page_Test@305fd85d]" name="close_browser" is-config="true" duration-ms="3098" started-at="2021-09-10T06:23:57 IST" finished-at="2021-09-10T06:24:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- Test_Pages.Login_Page_Test -->
+    </test> <!-- Auomation Test -->
+  </suite> <!-- Test-Suite -->
+</testng-results>
