@@ -9,9 +9,9 @@ public class SignUp_Page_test
 	public static void main(String[] args) throws InterruptedException 
 	{
 		String URL = "http://mykidsbank.org/";
-		String Browser = "chrome";
+		String Browser_typ = "chrome";
 		Browser_Lanuch br = new Browser_Lanuch();
-		br.browsers(Browser, URL);
+		br.browsers(Browser_typ, URL);
 		
 		SignUp_Page sp = new SignUp_Page(br.driver);
 		sp.Frst_name();
