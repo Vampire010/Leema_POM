@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import Create_new_deposit_account.Create_Deposit_Account;
 
@@ -35,6 +36,13 @@ public class Make_Deposit_One_Accoount
 	@FindBy(xpath="/html/body/table/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/table/tbody/tr/td/table/tbody/tr[6]/td/div[2]/span[1]")
 	WebElement Deposit_sbmit_Btn;
 	
+	@FindBy(xpath="//*[@id=\"12\"]")
+	WebElement Click_On_Usr_Balance;
+	
+
+	
+
+	
 	
 	
 	public Make_Deposit_One_Accoount(WebDriver d)
@@ -65,7 +73,7 @@ public class Make_Deposit_One_Accoount
 	
 	public void Deposit_Amount()
 	{
-		entr_amount.sendKeys("15000");
+		entr_amount.sendKeys("9000");
 	}
 	
 	public void Account_holder()
@@ -79,5 +87,7 @@ public class Make_Deposit_One_Accoount
 	public void Deposit_Confirm()
 	{
 		Deposit_sbmit_Btn.click();
+
+		
 	}
 }

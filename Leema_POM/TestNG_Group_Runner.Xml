@@ -6,7 +6,10 @@
 		<groups> 
        		<run>
        			<include name="Smoke_Test_Case"/>
-       			<include name="Regresssion_Test_Case"/>       			   			
+       			<include name="Regresssion_Test_Case"/>   
+       			<include name="Functional_Test_Case"/>   
+       			
+       			    			   			
 	         </run>
 	   </groups> 
  	

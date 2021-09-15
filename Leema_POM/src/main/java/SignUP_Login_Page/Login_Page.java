@@ -19,6 +19,9 @@ public class Login_Page {
 	@FindBy(xpath="//*[@id=\"clicked_when_enter_id\"]")
 	WebElement Login_Btn;
 	
+	@FindBy(xpath="/html/body/table/tbody/tr/td/table[1]/tbody/tr/td[3]/table/tbody/tr/td[2]")
+	WebElement Logout_Btn;
+	
 	
 	public Login_Page(WebDriver d)
 	{
@@ -27,7 +30,21 @@ public class Login_Page {
 	
 	public void Bank_Id()
 	{
-		Bnk_Id.sendKeys("70320");
+		try
+		{
+			if(Logout_Btn.isDisplayed())
+			{
+				System.out.println("You have Suceesfully loged in");
+				Logout_Btn.click();
+			}
+		}
+		catch(Exception E)
+		{
+			
+				System.out.println("You have not loged-in");
+				Bnk_Id.sendKeys("70320");
+			
+		}
 	}
 	
 	public void UserName()
@@ -44,4 +61,23 @@ public class Login_Page {
 	{
 		Login_Btn.click();
 	}
+	
+	public void LogOut_Button()
+	{
+		
+		if(Logout_Btn.isDisplayed())
+		{
+			System.out.println("You have Suceesfully loged in");
+			Logout_Btn.click();
+
+		}
+		else
+		{
+			System.out.println("You have not loged-in");
+
+		}
+		
+	}
+	
+	
 }

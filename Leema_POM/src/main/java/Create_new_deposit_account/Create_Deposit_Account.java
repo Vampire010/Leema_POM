@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Create_Deposit_Account
 {
@@ -26,6 +27,11 @@ public class Create_Deposit_Account
 	@FindBy(xpath="/html/body/table/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/form/table/tbody/tr/td/table[2]/tbody/tr/td[1]/span")
 	WebElement sbmit_Btn;
 	
+	@FindBy(xpath="//*[contains(text(),'krishna')]")
+	WebElement usr_name;
+	
+	
+	String Acnt_name = "krishna";
 	public Create_Deposit_Account(WebDriver d)
 	{
 		PageFactory.initElements(d, this);
@@ -43,22 +49,38 @@ public class Create_Deposit_Account
 	
 	public void Display_Name()
 	{
-		Displd_Name.sendKeys("ram");
+		Displd_Name.sendKeys(Acnt_name);
 	}
 	
 	public void Login_UserName()
 	{
-		Lgn_UserName.sendKeys("rams");
+		Lgn_UserName.sendKeys(Acnt_name);
 	}
 	
 	public void Login_password()
 	{
-		Lgn_password.sendKeys("rams1234");
+		Lgn_password.sendKeys("joes1234");
 	}
 	
 	public void submit_Btn()
 	{
 		sbmit_Btn.click();
 	}
+	
+	public void Assert_Test()
+	{
+		
+		
+		//If check is true, test will pass.
+	    System.out.println("AssertTrue Example");
+
+
+	    //Condition, Message
+	    Assert.assertTrue(Acnt_name.equals("krishna"), "AssertTrue test is failed!");
+
+	    System.out.println("AssertTrue test is Passed!\n");
+
+	}
+	
 	
 }

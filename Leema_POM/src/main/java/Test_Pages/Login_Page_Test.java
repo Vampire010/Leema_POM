@@ -28,6 +28,9 @@ public class Login_Page_Test
 		Thread.sleep(2000);
 		lp.Lign_Button();
 		Thread.sleep(2000);	
+		lp.LogOut_Button();
+
+		
 	}
 	
 	

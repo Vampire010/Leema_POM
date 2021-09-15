@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import Browser_Config.Browser_Lanuch;
 import Create_new_deposit_account.Create_Deposit_Account;
 import Money_Deposit.Make_Deposit_One_Accoount;
+import SignUP_Login_Page.Login_Page;
 
 public class Make_Deposit_Test_Page 
 {
@@ -19,10 +20,13 @@ public class Make_Deposit_Test_Page
 	public void open_browser() throws InterruptedException
 	{
 		br.browsers(Browser_typ, URL);
-		Login_Page_Test lg = new Login_Page_Test();
-		lg.Login_test();
+		Login_Page lg = new Login_Page(br.driver);
+		lg.Bank_Id();
+		lg.UserName();
+		lg.Password();
+		lg.Lign_Button();
 		
-	}
+	} 
 	
 	@Test(groups = { "Regression_Test_Case" })
 	public void test() throws InterruptedException 
