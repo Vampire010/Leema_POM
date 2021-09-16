@@ -1,55 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17129" started-at="2021-09-15T11:21:26 IST" finished-at="2021-09-15T11:21:43 IST">
+  <suite name="Default suite" duration-ms="10004" started-at="2021-09-16T06:15:13 IST" finished-at="2021-09-16T06:15:23 IST">
     <groups>
+      <group name="Smoke_Test_Case">
+        <method signature="Google.test()[pri:0, instance:TestNG_Assertions.Google@11438d26]" name="test" class="TestNG_Assertions.Google"/>
+      </group> <!-- Smoke_Test_Case -->
     </groups>
-    <test name="ChromeTest" duration-ms="6555" started-at="2021-09-15T11:21:26 IST" finished-at="2021-09-15T11:21:32 IST">
-      <class name="MultiBrowsers_test.MultiBrowser_test">
-        <test-method status="PASS" signature="open_Browser(java.lang.String)[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@1d8d30f7]" name="open_Browser" is-config="true" duration-ms="4436" started-at="2021-09-15T11:21:26 IST" finished-at="2021-09-15T11:21:30 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="10004" started-at="2021-09-16T06:15:13 IST" finished-at="2021-09-16T06:15:23 IST">
+      <class name="TestNG_Assertions.Google">
+        <test-method status="PASS" signature="open_browser()[pri:0, instance:TestNG_Assertions.Google@11438d26]" name="open_browser" is-config="true" duration-ms="3777" started-at="2021-09-16T06:15:13 IST" finished-at="2021-09-16T06:15:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Browser -->
-        <test-method status="PASS" signature="Login_Page_Tests()[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@1d8d30f7]" name="Login_Page_Tests" duration-ms="2007" started-at="2021-09-15T11:21:30 IST" finished-at="2021-09-15T11:21:32 IST">
+        </test-method> <!-- open_browser -->
+        <test-method status="PASS" signature="test()[pri:0, instance:TestNG_Assertions.Google@11438d26]" name="test" duration-ms="3086" started-at="2021-09-16T06:15:17 IST" finished-at="2021-09-16T06:15:20 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_Page_Tests -->
-        <test-method status="PASS" signature="close_browser()[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@1d8d30f7]" name="close_browser" is-config="true" duration-ms="86" started-at="2021-09-15T11:21:32 IST" finished-at="2021-09-15T11:21:32 IST">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="close_browser()[pri:0, instance:TestNG_Assertions.Google@11438d26]" name="close_browser" is-config="true" duration-ms="3104" started-at="2021-09-16T06:15:20 IST" finished-at="2021-09-16T06:15:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_browser -->
-      </class> <!-- MultiBrowsers_test.MultiBrowser_test -->
-    </test> <!-- ChromeTest -->
-    <test name="EdgeTest" duration-ms="5554" started-at="2021-09-15T11:21:37 IST" finished-at="2021-09-15T11:21:43 IST">
-      <class name="MultiBrowsers_test.MultiBrowser_test">
-        <test-method status="PASS" signature="open_Browser(java.lang.String)[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@491cc5c9]" name="open_Browser" is-config="true" duration-ms="3006" started-at="2021-09-15T11:21:37 IST" finished-at="2021-09-15T11:21:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Browser -->
-        <test-method status="PASS" signature="Login_Page_Tests()[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@491cc5c9]" name="Login_Page_Tests" duration-ms="2457" started-at="2021-09-15T11:21:40 IST" finished-at="2021-09-15T11:21:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Page_Tests -->
-        <test-method status="PASS" signature="close_browser()[pri:0, instance:MultiBrowsers_test.MultiBrowser_test@491cc5c9]" name="close_browser" is-config="true" duration-ms="89" started-at="2021-09-15T11:21:43 IST" finished-at="2021-09-15T11:21:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close_browser -->
-      </class> <!-- MultiBrowsers_test.MultiBrowser_test -->
-    </test> <!-- EdgeTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestNG_Assertions.Google -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -11,32 +11,26 @@ public class MultiBrowser_test
 {
 	String URL = "http://mykidsbank.org";
 	
-	MultiBrowser Login_Pages = new MultiBrowser();
+	MultiBrowser Lp = new MultiBrowser();
+	
+	
 	@Parameters("browser_Type")
 	@BeforeTest
 	public  void open_Browser(String browser_Type) throws InterruptedException
 	{			 
-		System.out.println("The thread ID for Chrome Test is "+ Thread.currentThread().getId());
-
-		
-		Login_Pages.browsers(browser_Type, URL);
+		Lp.browsers(browser_Type, URL);
 	}
 	
 	@Test
 	public  void Login_Page_Tests() 
 	{
-		Login_Pages.Login_Page();
+		Lp.Login_Page();
 		
 	}
-	
-	
 	
 	@AfterTest
 	public  void close_browser()
 	{
-		 System.out.println("After Test Thread Number Is " + Thread.currentThread().getId());
-			Login_Pages.driver.quit();
-
-				
+		 Lp.driver.quit();		
 	}
 }

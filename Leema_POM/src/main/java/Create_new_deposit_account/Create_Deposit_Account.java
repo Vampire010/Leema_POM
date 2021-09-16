@@ -27,11 +27,12 @@ public class Create_Deposit_Account
 	@FindBy(xpath="/html/body/table/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/form/table/tbody/tr/td/table[2]/tbody/tr/td[1]/span")
 	WebElement sbmit_Btn;
 	
-	@FindBy(xpath="//*[contains(text(),'krishna')]")
+	@FindBy(xpath="//*[contains(text(),'franklin')]")
 	WebElement usr_name;
 	
 	
-	String Acnt_name = "krishna";
+	String Acnt_name = "franklin";
+	
 	public Create_Deposit_Account(WebDriver d)
 	{
 		PageFactory.initElements(d, this);
@@ -70,13 +71,14 @@ public class Create_Deposit_Account
 	public void Assert_Test()
 	{
 		
+		String Asrt_Name = usr_name.getText();
 		
 		//If check is true, test will pass.
-	    System.out.println("AssertTrue Example");
-
+	    System.out.println("AssertTrue Example  " +Asrt_Name );
+	    
 
 	    //Condition, Message
-	    Assert.assertTrue(Acnt_name.equals("krishna"), "AssertTrue test is failed!");
+	    Assert.assertTrue(Acnt_name.equals(Asrt_Name), "AssertTrue test is failed!");
 
 	    System.out.println("AssertTrue test is Passed!\n");
 
